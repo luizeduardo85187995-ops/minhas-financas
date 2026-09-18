@@ -1,0 +1,44 @@
+BACKUP DO APP MINHAS FINANCAS
+
+Data do backup: 28/05/2026
+Versao do app: 1.2.2
+
+O que tem neste pacote:
+- Codigo-fonte completo do app Expo/React Native.
+- APK atual para instalar no celular.
+- Pacote do notebook.
+- Arquivos de configuracao, servidor, assets, lockfile e documentacao.
+
+Arquivos importantes:
+- dist/financas-android-1.2.2.apk
+- dist/financas-notebook-1.2.2.zip
+- CONFIGURAR_PRODUCAO.md
+- package.json
+- pnpm-lock.yaml
+- app.json
+
+Depois da formatacao:
+1. Instale Node.js LTS.
+2. Abra o PowerShell na pasta extraida do app.
+3. Rode:
+
+   corepack enable
+   corepack pnpm install --ignore-workspace
+
+4. Para testar o app no notebook/celular via Expo:
+
+   corepack pnpm exec expo start --lan
+
+5. Para conferir tipos:
+
+   corepack pnpm exec tsc -p tsconfig.json --noEmit
+
+6. Para gerar novo APK via EAS:
+
+   $env:EAS_NO_VCS='1'
+   corepack pnpm exec eas build --platform android --profile preview --non-interactive
+
+Observacoes:
+- A pasta node_modules nao foi incluida porque fica muito pesada e pode ser reinstalada.
+- Chaves reais de AdMob, Brapi, Open Finance e IA nao devem ficar dentro do APK.
+- Use CONFIGURAR_PRODUCAO.md para lembrar o caminho de publicacao.

@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "Minhas Financas",
+    "slug": "financas",
+    "version": "1.2.6",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "financas",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#061121"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.financaspessoal.app"
+    },
+    "android": {
+      "package": "com.financaspessoal.app",
+      "versionCode": 9,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#061121"
+      },
+      "permissions": []
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      "expo-font",
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-3940256099942544~3347511713",
+          "iosAppId": "ca-app-pub-3940256099942544~1458002511"
+        }
+      ],
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "admob": {
+        "androidBannerUnitId": "ca-app-pub-3940256099942544/6300978111",
+        "iosBannerUnitId": "ca-app-pub-3940256099942544/2934735716"
+      },
+      "eas": {
+        "projectId": "5b46ada6-689b-4250-bb27-23b6e5c658ed"
+      }
+    }
+  }
+}
