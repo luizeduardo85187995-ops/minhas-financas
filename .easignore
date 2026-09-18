@@ -1,0 +1,20 @@
+# Dependencias e caches locais
+node_modules/
+.pnpm-store/
+.corepack/
+.expo/
+
+# Builds e pacotes anteriores
+dist/
+web-build/
+android/
+ios/
+
+# Arquivos locais e temporarios
+.env
+.env*.local
+*.log
+*.tsbuildinfo
+.vercel/
+.DS_Store
+
