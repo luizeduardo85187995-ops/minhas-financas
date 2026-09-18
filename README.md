@@ -25,6 +25,30 @@ pnpm install
 pnpm exec expo start
 ```
 
+## Usar no PC
+
+O APK é apenas para Android. Para usar no PC, rode a versão Web no navegador:
+
+```bash
+pnpm install
+pnpm run build:web
+pnpm run preview:web
+```
+
+Depois abra:
+
+```txt
+http://localhost:4173
+```
+
+No Windows, também existe o atalho:
+
+```txt
+abrir-no-pc-web.bat
+```
+
+Observação: os dados salvos no navegador do PC ficam separados dos dados salvos no app Android, a menos que seja criado/ativado um backup e restauração entre os dois.
+
 ## Gerar APK pelo EAS
 
 ```bash
