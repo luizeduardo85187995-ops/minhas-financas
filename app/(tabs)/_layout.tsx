@@ -29,6 +29,10 @@ function NativeTabLayout() {
         />
         <Label>Investir</Label>
       </NativeTabs.Trigger>
+      <NativeTabs.Trigger name="game">
+        <Icon sf={{ default: "gamecontroller", selected: "gamecontroller.fill" }} />
+        <Label>Jogo</Label>
+      </NativeTabs.Trigger>
       <NativeTabs.Trigger name="reports">
         <Icon sf={{ default: "doc.text", selected: "doc.text.fill" }} />
         <Label>Relatórios</Label>
@@ -111,6 +115,15 @@ function ClassicTabLayout() {
           title: "Investir",
           tabBarIcon: ({ color }) => (
             <Feather name="trending-up" size={20} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="game"
+        options={{
+          title: "Jogo",
+          tabBarIcon: ({ color }) => (
+            <Feather name="target" size={20} color={color} />
           ),
         }}
       />

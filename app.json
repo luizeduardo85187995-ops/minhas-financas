@@ -2,7 +2,7 @@
   "expo": {
     "name": "Minhas Financas",
     "slug": "financas",
-    "version": "1.2.6",
+    "version": "1.2.7",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "financas",
@@ -19,7 +19,7 @@
     },
     "android": {
       "package": "com.financaspessoal.app",
-      "versionCode": 9,
+      "versionCode": 10,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#061121"
